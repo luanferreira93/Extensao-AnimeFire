@@ -1,0 +1,17 @@
+{
+    "manifest_version" : 2,
+    "version" : "0.0.1",
+    "name" : "animefire extension",
+    "description" : "Extensão em teste",
+    "author" : "Luan Carlos",
+    "browser_action" : {
+        "default_title" : "AnimeFire Extension",
+        "default_popup" : "index.html"
+    },
+    "content_scripts" : [
+        {
+            "matches" : ["*://*.animefire.net/*"],
+            "js" : ["index.js"]
+        }
+    ]
+}
